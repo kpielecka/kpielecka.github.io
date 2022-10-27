@@ -1,21 +1,35 @@
 body{
-    background-color: rgba(31, 111, 26, 0.565);
+    background-color: rgba(161,187,140,0.8);
     font-family: 'Quicksand', sans-serif;
+    margin:0;
   }
 
   nav{
-    border:5px groove green;
+    background-color: rgba(0, 0, 0, 0.77);
     display:flex;
     justify-content: space-between;
+    padding: 5px;
   }
   
   
   h1{
-    border:5px groove blue;
+    margin:0;
   }
   
   ul{
-    border:5px groove red;
     display:flex;
+    align-self: center;
+    margin:0;
+    padding:0;
+    list-style: none;
+  }
+
+  li{
+    padding:0 5px;
+  }
+
+  a{
+    color:#fff;
+    text-decoration: none;
   }
   
