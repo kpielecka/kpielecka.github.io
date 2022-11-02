@@ -1,3 +1,7 @@
+:root{
+  --navAccent: rgba(0, 0, 0, 0.77);
+}
+
 body{
     background-color: rgba(161,187,140,0.8);
     font-family: 'Quicksand', sans-serif;
@@ -5,7 +9,7 @@ body{
   }
 
   nav{
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: var(--navAccent);
     display:flex;
     justify-content: space-between;
     padding: 5px 10px;
@@ -25,7 +29,7 @@ body{
   }
 
   li{
-    padding:0 5px;
+    padding:0 0 0 10px;
   }
 
   a{
@@ -51,7 +55,7 @@ body{
   }
 
   p{
-    margin-top: 1rem;
+    margin-top: 4rem;
     line-height: 1.6rem;
   }
 
@@ -69,18 +73,40 @@ body{
     font-size: 3rem;
 }
 
+footer{
+  background-color: var(--navAccent);
+  color:#fff;
+  padding: 1rem;
+}
 
+footer p{
+  margin:0rem;
+  text-align: right;
+}
+  
 
   @media (min-width: 768px){
     header{
       flex-wrap: nowrap;
       align-items: center;
     }
+
     img{
       max-width: 40%;
       margin: 3rem;
     }
+
     header div{
       min-width: 40%;    
     }
+
+    section > * {
+      max-width: 60%;
+    }
+
+    section div{
+      margin: 3rem;
+    }
+
+
   } 
