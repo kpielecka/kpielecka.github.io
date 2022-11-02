@@ -33,7 +33,7 @@ body{
     text-decoration: none;
   }
 
-  header{
+  body > header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,6 +55,22 @@ body{
     line-height: 1.6rem;
   }
 
+  section{
+    padding:10px
+  }
+
+  section div{
+    display: flex;
+    justify-content: center;  
+}
+
+  section div a{
+    margin:1rem;
+    font-size: 3rem;
+}
+
+
+
   @media (min-width: 768px){
     header{
       flex-wrap: nowrap;
@@ -67,4 +83,4 @@ body{
     header div{
       min-width: 40%;    
     }
-  }
+  } 
