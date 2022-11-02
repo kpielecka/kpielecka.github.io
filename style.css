@@ -13,6 +13,8 @@ body{
     display:flex;
     justify-content: space-between;
     padding: 5px 10px;
+    position: sticky;
+    top:0;
   }
   
   
@@ -55,7 +57,7 @@ body{
   }
 
   p{
-    margin-top: 4rem;
+    margin-top: 1rem;
     line-height: 1.6rem;
   }
 
@@ -84,9 +86,9 @@ footer p{
   text-align: right;
 }
   
-
+/* DESKTOP VIEW */
   @media (min-width: 768px){
-    header{
+    body > header{
       flex-wrap: nowrap;
       align-items: center;
     }
@@ -108,5 +110,39 @@ footer p{
       margin: 3rem;
     }
 
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
 
   } 
+
+  /* MOBILNE VIEW*/
+  @media (max-width:768px){
+    nav{
+        height: 2rem;
+      }
+      
+    nav ul {
+      flex-direction: column;
+      position: fixed;
+      top:calc(10px + 2rem);
+      right:0;
+      height: calc(100% - (10px + 2rem));
+      background-color: var(--navAccent);
+      width: 40vw;
+      text-align: right;
+      transition: 0.7s;
+      
+    }
+    nav ul li {
+        padding: 1rem 1rem;
+    }
+
+    #toggler:checked ~ ul {
+      border: 2px dashed red;
+      right: -40vh;
+    }
+  }
